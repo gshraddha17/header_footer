@@ -1,0 +1,472 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  box-shadow:0px 0px 8px 2px #fff inset;
+}
+.wrapper{
+  background: url("data:image/jpeg;base64,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");
+   background-repeat: no-repeat;
+   background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+.wrapper nav{
+  position: relative;
+  display: flex;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .content{
+  display: flex;
+  align-items: center;
+}
+nav .content .links{
+  margin-left: 80px;
+  display: flex;
+}
+.content .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.content .links li{
+  list-style: none;
+  line-height: 70px;
+}
+.content .links li a,
+.content .links li label{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+.search-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  color: #fff;
+  background: #171c24;
+  padding: 0 100px 0 15px;
+}
+.search-box input::placeholder{
+  color: #f2f2f2;
+}
+.search-box .go-icon{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 60px;
+  width: 70px;
+  background: #171c24;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+
+.dummy-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.dummy-text h2{
+  font-size: 45px;
+  margin: 5px 0;
+}
+[9:18 pm, 20/01/2022] Shraddha: @media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+footer{
+  bottom:0;
+  width:100%;
+  height:40%;
+  position: fixed;
+  background: url("https://wallpaperaccess.com/full/1288331.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+body{
+  line-height;1.5;
+  font-family: 'Poppins',sans-serif;
+  background-color: #ffff99;
+}
+.container{
+  max-width:1170px;
+  
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+
+.footer{
+  background: url("https://wallpaperaccess.com/full/1288331.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+    padding: 70px 0;
+
+}
+.footer-col{
+   width: 50%;
+   padding: 0 15px;
+ 
+
+
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: blue;
+  padding-left: 8px;
+  
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: blue;
+}
+.footer-bottom{
+  text-align:center;
+  color:white;
+
+}
+
+
