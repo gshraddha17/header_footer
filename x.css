@@ -35,7 +35,7 @@ nav .content .links{
   display: flex;
 }
 .content .logo a{
-  color: #fff;
+  color:yellow;
   font-size: 30px;
   font-weight: 600;
 }
