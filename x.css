@@ -15,6 +15,7 @@ header{
    background-size: cover;
   position: fixed;
   width: 100%;
+   box-shadow:0px 0px 8px 2px #fff inset;
 }
 .wrapper nav{
   position: relative;
@@ -118,7 +119,7 @@ nav .content .links{
   display: none;
 }
 
-/* Dropdown Menu code start */
+
 .content .links ul{
   position: absolute;
   background: #171c24;
@@ -151,7 +152,7 @@ nav .content .links{
   top: 0;
 }
 
-/* Responsive code start */
+
 @media screen and (max-width: 1250px){
   .wrapper nav{
     max-width: 100%;
@@ -210,7 +211,6 @@ nav .content .links{
     display: none;
   }
 
-  /* dropdown responsive code start */
   .content .links ul,
   .content .links ul ul{
     position: static;
@@ -377,7 +377,7 @@ footer{
   background: url("https://wallpaperaccess.com/full/1288331.jpg");
    background-repeat: no-repeat;
    background-size: cover;
-
+ box-shadow:0px 0px 8px 2px #fff inset;
 }
 body{
   line-height;1.5;
